@@ -5,7 +5,7 @@ void main() {
   readFileContent();
 }
 
-readFileContent() async {
+Future<void> readFileContent() async {
   String file = await downloading();
   print('This is your $file');
 }
